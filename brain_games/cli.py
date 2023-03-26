@@ -1,26 +1,17 @@
-"""All functions of the program."""
+"""Greeting module."""
 
 
 import prompt
 
 
-def greet(who):
-    """
-    Greets person.
-
-    Args:
-        who: The person's name
-    """
-    print('Hello, {n}!'.format(n=who))
-
-
-def welcome_greet():
-    """Welcome greeting at the start of program."""
-    print('Welcome to the Brain Games!')
-
-
 def welcome_user():
-    """Asks users to impute their name and greets them."""
-    welcome_greet()
+    """
+    Asks users to impute their name and greets them.
+
+    Returns:
+        The user's name as string
+    """
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    greet(name)
+    print('Hello, {who}!'.format(who=name))
+    return name
