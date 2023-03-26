@@ -4,6 +4,9 @@ install:
 brain-games:
 	poetry run brain-games
 
+update:
+    poetry update
+
 build:
 	poetry build
 
@@ -16,4 +19,4 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
-test: build publish
+test: update build publish
