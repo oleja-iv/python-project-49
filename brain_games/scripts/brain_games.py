@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
 This is a simple command-line game.
-Greets person
+
+Asks person for name greets them
 """
 
-from ..cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 def main():
-    """File is loaded as script."""
+    """File is loaded as script, greet the person."""
     welcome_user()
 
 
