@@ -5,7 +5,7 @@ brain-games:
 	poetry run brain-games
 
 update:
-    poetry update
+	poetry update
 
 build:
 	poetry build
