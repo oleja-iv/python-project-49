@@ -1,2 +1,2 @@
 """Package with executable scripts."""
-__all__ = ('brain_games', 'brain_even', 'brain_calc')
+__all__ = ('brain_games', 'brain_even', 'brain_calc', 'brain_gcd')

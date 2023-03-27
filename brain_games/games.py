@@ -1,4 +1,5 @@
 """The logic of all games."""
+import math
 import operator
 import random
 
@@ -77,6 +78,29 @@ def is_winner_in_calc_game():
     return True
 
 
+def is_winner_in_gcd_game():
+    """
+    Answer the question three times% find the greatest common divisor.
+
+    Returns:
+         True if user is a winner, False in otherwise
+    """
+    print('Find the greatest common divisor of given numbers.')
+    for _ in range(0, 3):
+        num1 = random.randint(0, range_-10)
+        num2 = random.randint(0, range_-10)
+        num3 = random.randint(0, range_-10)
+        first = num1 * num3
+        second = num2 * num3
+        correct_answer = str(math.gcd(first, second))
+
+        pair = '{x} {y}'.format(x=first, y=second)
+
+        if not is_correct_answer(pair, correct_answer):
+            return False
+    return True
+
+
 def start_the(game_name):
     """
     Start the game and check 4 results.
@@ -88,6 +112,7 @@ def start_the(game_name):
     games = {
         'even_game': is_winner_in_even_game,
         'calc_game': is_winner_in_calc_game,
+        'gcd_game': is_winner_in_gcd_game,
     }
 
     is_winner = games[game_name]()  # Не стал упрощать и пихать в if

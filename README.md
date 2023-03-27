@@ -8,3 +8,6 @@
 
 ### Example of playing _*brain-calc*_ game
 [![asciicast](https://asciinema.org/a/570746.svg)](https://asciinema.org/a/570746)
+
+### Example of playing _*brain-gcd*_ game
+[![asciicast](https://asciinema.org/a/570944.svg)](https://asciinema.org/a/570944)
