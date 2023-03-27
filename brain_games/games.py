@@ -87,9 +87,9 @@ def is_winner_in_gcd_game():
     """
     print('Find the greatest common divisor of given numbers.')
     for _ in range(0, 3):
-        num1 = random.randint(0, range_-10)
-        num2 = random.randint(0, range_-10)
-        num3 = random.randint(0, range_-10)
+        num1 = random.randint(0, range_ - 10)
+        num2 = random.randint(0, range_ - 10)
+        num3 = random.randint(0, range_ - 10)
         first = num1 * num3
         second = num2 * num3
         correct_answer = str(math.gcd(first, second))
