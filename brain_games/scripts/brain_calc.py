@@ -8,7 +8,7 @@ from brain_games.games import start_the
 
 
 def main():
-    """Start the game."""
+    """Start the calc game."""
     start_the('calc_game')
 
 
