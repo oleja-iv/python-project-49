@@ -3,4 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ada1a855e47817f5994d/maintainability)](https://codeclimate.com/github/oleja-iv/python-project-49/maintainability)
 
+### Example of installing and playing _*brain-even*_ game
 [![asciicast](https://asciinema.org/a/570453.svg)](https://asciinema.org/a/570453)
+
+### Example of playing _*brain-calc*_ game
+[![asciicast](https://asciinema.org/a/570746.svg)](https://asciinema.org/a/570746)
