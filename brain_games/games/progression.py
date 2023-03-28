@@ -10,7 +10,7 @@ rand = 1000  # max start value
 
 def generate():
     """
-    Answer the question three times, find the missing element in progression.
+    Generate progression.
 
     Returns:
          list of progression

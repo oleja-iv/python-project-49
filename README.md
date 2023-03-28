@@ -18,3 +18,7 @@
 
 ### Example of playing Missing progression element game
 [![asciicast](https://asciinema.org/a/571266.svg)](https://asciinema.org/a/571266)
+
+
+### Example of playing "Number is prime or not" game
+[![asciicast](https://asciinema.org/a/571458.svg)](https://asciinema.org/a/571458)
