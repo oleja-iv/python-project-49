@@ -9,16 +9,16 @@
 
 
 ### Example of playing _*brain-calc*_ game
-[![asciicast](https://asciinema.org/a/570746.svg)](https://asciinema.org/a/570746)
+[![asciicast](https://asciinema.org/a/571464.svg)](https://asciinema.org/a/571464)
 
 
 ### Example of playing The Greatest Common Diviser (gcd) game
-[![asciicast](https://asciinema.org/a/570944.svg)](https://asciinema.org/a/570944)
+[![asciicast](https://asciinema.org/a/571469.svg)](https://asciinema.org/a/571469)
 
 
 ### Example of playing Missing progression element game
-[![asciicast](https://asciinema.org/a/571266.svg)](https://asciinema.org/a/571266)
+[![asciicast](https://asciinema.org/a/571474.svg)](https://asciinema.org/a/571474)
 
 
 ### Example of playing "Number is prime or not" game
-[![asciicast](https://asciinema.org/a/571458.svg)](https://asciinema.org/a/571458)
+[![asciicast](https://asciinema.org/a/571477.svg)](https://asciinema.org/a/571477)
