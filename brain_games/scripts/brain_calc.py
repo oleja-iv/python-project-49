@@ -4,7 +4,7 @@ This is a simple command-line game.
 
 Greets person and start the game "calc it"
 """
-from brain_games.games import start_the
+from brain_games.launch import start_the
 
 
 def main():
