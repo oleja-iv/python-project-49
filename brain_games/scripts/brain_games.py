@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-This is a simple command-line game.
-
-Asks person for name greets them
-"""
+"""Ask person for name and greet them."""
 from brain_games.cli import welcome_user
 
 

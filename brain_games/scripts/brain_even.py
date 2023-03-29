@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""
-This is a simple command-line game.
-
-Greets person and start the game "even or not"
-"""
+"""Start the game 'even or not'."""
+import brain_games.games.even
 from brain_games.launch import start_the
 
 
 def main():
     """Start the even game."""
-    start_the('even_game')
+    start_the(brain_games.games.even)
 
 
 if __name__ == '__main__':

@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""
-This is a simple command-line game.
-
-Greets person and start the game "calc it"
-"""
+"""Start the game 'calc it'."""
+import brain_games.games.calc
 from brain_games.launch import start_the
 
 
 def main():
     """Start the calc game."""
-    start_the('calc_game')
+    start_the(brain_games.games.calc)
 
 
 if __name__ == '__main__':
