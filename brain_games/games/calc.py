@@ -4,9 +4,9 @@ import random
 
 from brain_games.games.logic import is_correct_answer
 
-rand = 30  # max value of operands
-# dict with operators 4 calc game
-action = {
+RANDOM_LIMIT = 30  # max value of operands
+# dict with operators for calc game
+ACTION = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
@@ -22,15 +22,20 @@ def start_round():
     Answer the question three times: what is the result of the expression.
 
     Returns:
-         True if user is a winner, False in otherwise
+         expression: task that should be resolved
+         correct_answer: correct answer for the task
     """
-    first = random.randint(-rand, rand)
-    second = random.randint(-rand, rand)
+    first_operand = random.randint(-RANDOM_LIMIT, RANDOM_LIMIT)
+    second_operand = random.randint(-RANDOM_LIMIT, RANDOM_LIMIT)
     sign = random.choice(('+', '-', '*'))
 
-    correct_answer = str(action[sign](first, second))
-    expression = '{x} {s} {y}'.format(x=first, s=sign, y=second)
+    correct_answer = str(
+        ACTION[sign](first_operand, second_operand)
+    )
+    expression = '{first} {s} {second}'.format(
+        first=first_operand,
+        s=sign,
+        second=second_operand,
+    )
 
-    if not is_correct_answer(expression, correct_answer):
-        return False
-    return True
+    return expression, correct_answer
