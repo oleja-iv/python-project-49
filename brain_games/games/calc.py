@@ -19,7 +19,7 @@ def give_a_task():
 
 def start_round():
     """
-    Answer the question three times: what is the result of the expression.
+    Generate expression and correct answer for it.
 
     Returns:
          expression: task that should be resolved
