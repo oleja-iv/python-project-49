@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Start the game 'even or not'."""
 import brain_games.games.gcd
-from brain_games.launch import start_the
+from brain_games.engine import start_the
 
 
 def main():
