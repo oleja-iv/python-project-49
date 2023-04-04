@@ -8,6 +8,10 @@ rand = 1000  # max start value
 (min_p, max_p) = (5, 10)  # amount of numbers in shown progression
 
 
+def give_a_task():
+    print('What number is missing in the progression?')
+
+
 def generate():
     """
     Generate progression.
@@ -25,21 +29,19 @@ def generate():
     return progression, length
 
 
-def is_winner():
+def start_round():
     """
     Answer the question three times, find the missing element in progression.
 
     Returns:
          True if user is a winner, False in otherwise
     """
-    print('What number is missing in the progression?')
-    for _ in range(0, 3):
-        progression, length = generate()
-        element = random.randint(0, length)
-        number = progression[element]
-        progression[element] = '..'
-        prog_str = ' '.join(progression)
+    progression, length = generate()
+    element = random.randint(0, length)
+    number = progression[element]
+    progression[element] = '..'
+    prog_str = ' '.join(progression)
 
-        if not is_correct_answer(prog_str, number):
-            return False
+    if not is_correct_answer(prog_str, number):
+        return False
     return True

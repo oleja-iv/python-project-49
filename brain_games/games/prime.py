@@ -7,6 +7,10 @@ from brain_games.games.logic import is_correct_answer
 rand = 100  # max value of number
 
 
+def give_a_task():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
 def check(given_number):
     """
     Check number is prime or not.
@@ -26,19 +30,16 @@ def check(given_number):
     return True
 
 
-def is_winner():
+def start_round():
     """
     Answer 'yes' if number is prime, otherwise 'no'.
 
     Returns:
          True if user is a winner, False in otherwise
     """
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    number = random.randint(2, rand)
+    correct_answer = 'yes' if check(number) else 'no'
 
-    for _ in range(0, 3):
-        number = random.randint(2, rand)
-        correct_answer = 'yes' if check(number) else 'no'
-
-        if not is_correct_answer(number, correct_answer):
-            return False
+    if not is_correct_answer(number, correct_answer):
+        return False
     return True

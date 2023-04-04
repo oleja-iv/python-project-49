@@ -13,22 +13,24 @@ action = {
 }
 
 
-def is_winner():
+def give_a_task():
+    print('What is the result of the expression?')
+
+
+def start_round():
     """
     Answer the question three times: what is the result of the expression.
 
     Returns:
          True if user is a winner, False in otherwise
     """
-    print('What is the result of the expression?')
-    for _ in range(0, 3):
-        first = random.randint(-rand, rand)
-        second = random.randint(-rand, rand)
-        sign = random.choice(('+', '-', '*'))
+    first = random.randint(-rand, rand)
+    second = random.randint(-rand, rand)
+    sign = random.choice(('+', '-', '*'))
 
-        correct_answer = str(action[sign](first, second))
-        expression = '{x} {s} {y}'.format(x=first, s=sign, y=second)
+    correct_answer = str(action[sign](first, second))
+    expression = '{x} {s} {y}'.format(x=first, s=sign, y=second)
 
-        if not is_correct_answer(expression, correct_answer):
-            return False
+    if not is_correct_answer(expression, correct_answer):
+        return False
     return True
