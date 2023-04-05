@@ -2,7 +2,7 @@
 import math
 import random
 
-rand = 100  # max value of number
+RANDOM_LIMIT = 100  # max value of number
 
 
 def give_a_task():
@@ -17,10 +17,10 @@ def check(given_number):
         given_number: number that would checked
 
     Returns:
-         True or False
+         True if number is Prime, otherwise False
     """
     max_divider = int(math.sqrt(given_number)) + 1
-    # max divider < sqrt(not prime)
+    # max divider < sqrt(not_prime)
 
     for element in range(2, max_divider):
         if given_number % element == 0:
@@ -33,9 +33,10 @@ def start_round():
     Answer 'yes' if number is prime, otherwise 'no'.
 
     Returns:
-         True if user is a winner, False in otherwise
+         random_number: we check it for 'Prime'
+         correct_answer: 'yes', if number is Prime, otherwise 'no'
     """
-    number = random.randint(2, rand)
-    correct_answer = 'yes' if check(number) else 'no'
+    random_number = random.randint(2, RANDOM_LIMIT)
+    correct_answer = 'yes' if check(random_number) else 'no'
 
-    return number, correct_answer
+    return random_number, correct_answer
