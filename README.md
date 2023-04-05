@@ -25,23 +25,13 @@ You are given a pair of numbers, you should find a greatest common divider and e
 You are given a progression with missing element, you need to find and enter it
 5. *`brain-prime`* You are given a number, you should enter 'yes' if number is ***Prime***, otherwise 'no'
 
-
-
 ### Example of installing and playing `brain-even` game
 [![asciicast](https://asciinema.org/a/570453.svg)](https://asciinema.org/a/570453)
-
-
 ### Example of playing `brain-calc` game
 [![asciicast](https://asciinema.org/a/571464.svg)](https://asciinema.org/a/571464)
-
-
 ### Example of playing `brain-gcd` game
 [![asciicast](https://asciinema.org/a/571469.svg)](https://asciinema.org/a/571469)
-
-
 ### Example of playing `brain-progression` game
 [![asciicast](https://asciinema.org/a/571474.svg)](https://asciinema.org/a/571474)
-
-
 ### Example of playing `brain-prime` game
 [![asciicast](https://asciinema.org/a/571477.svg)](https://asciinema.org/a/571477)
