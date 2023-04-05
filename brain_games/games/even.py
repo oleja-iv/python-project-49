@@ -2,10 +2,11 @@
 
 import random
 
-RANDOM_LIMIT = 30  # max value of in questions for even, progression and calc games
+RANDOM_LIMIT = 30  # max value of random number
 
 
 def give_a_task():
+    """Show a task."""
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 

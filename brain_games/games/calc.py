@@ -2,11 +2,9 @@
 import operator
 import random
 
-from brain_games.games.logic import is_correct_answer
-
 RANDOM_LIMIT = 30  # max value of operands
 # dict with operators for calc game
-ACTION = {
+action = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
@@ -14,6 +12,7 @@ ACTION = {
 
 
 def give_a_task():
+    """Show a task."""
     print('What is the result of the expression?')
 
 
@@ -30,7 +29,7 @@ def start_round():
     sign = random.choice(('+', '-', '*'))
 
     correct_answer = str(
-        ACTION[sign](first_operand, second_operand)
+        action[sign](first_operand, second_operand),
     )
     expression = '{first} {s} {second}'.format(
         first=first_operand,
