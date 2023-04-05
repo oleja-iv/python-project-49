@@ -1,6 +1,8 @@
 """The maintenance of all games."""
-import prompt
 import brain_games.cli
+import prompt
+
+MAX_ROUNDS = 3
 
 
 def is_correct_answer(question, correct_answer):
@@ -39,11 +41,11 @@ def start_the(game_name):
     game_name.give_a_task()
 
     successful_rounds = 0
-    while successful_rounds < 3:
+    while successful_rounds < MAX_ROUNDS:
         task, correct_answer = game_name.start_round()
         if not is_correct_answer(task, correct_answer):
             print("Let's try again, {who}!".format(who=name))
             break
         successful_rounds += 1
-    if successful_rounds == 3:
+    if successful_rounds == MAX_ROUNDS:
         print('Congratulations, {who}!'.format(who=name))
