@@ -1,8 +1,6 @@
 """Find the missing value of progression game."""
 import random
 
-from brain_games.games.logic import is_correct_answer
-
 rand_step = 20  # max value of step in progression game
 rand = 1000  # max start value
 (min_p, max_p) = (5, 10)  # amount of numbers in shown progression
@@ -42,6 +40,4 @@ def start_round():
     progression[element] = '..'
     prog_str = ' '.join(progression)
 
-    if not is_correct_answer(prog_str, number):
-        return False
-    return True
+    return prog_str, number

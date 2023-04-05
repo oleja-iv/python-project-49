@@ -2,8 +2,6 @@
 import math
 import random
 
-from brain_games.games.logic import is_correct_answer
-
 rand = 100  # max value of number
 
 
@@ -40,6 +38,4 @@ def start_round():
     number = random.randint(2, rand)
     correct_answer = 'yes' if check(number) else 'no'
 
-    if not is_correct_answer(number, correct_answer):
-        return False
-    return True
+    return number, correct_answer
