@@ -21,7 +21,7 @@ def generate_progression():
     element = random.randint(-RANDOM_LIMIT, RANDOM_LIMIT)
     length = random.randint(MINIMUM_SIZE, MAXIMUM_SIZE)
     step = random.randint(-RANDOM_STEP_LIMIT, RANDOM_STEP_LIMIT)
-    
+
     progression = [str(element)]
     for _ in range(0, length):
         element += step
