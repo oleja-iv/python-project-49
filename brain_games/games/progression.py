@@ -1,14 +1,10 @@
 """Find the missing value of progression game."""
 import random
 
+TASK = 'What number is missing in the progression?'
 RANDOM_STEP_LIMIT = 20  # max value of step in progression game
 RANDOM_LIMIT = 1000  # max start value
 (MINIMUM_SIZE, MAXIMUM_SIZE) = (5, 10)  # amount of numbers in shown progression
-
-
-def give_a_task():
-    """Show a task."""
-    print('What number is missing in the progression?')
 
 
 def generate_progression():

@@ -2,18 +2,14 @@
 import operator
 import random
 
+TASK = 'What is the result of the expression?'
 RANDOM_LIMIT = 30  # max value of operands
 # dict with operators for calc game
-action = {
+ACTION = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
 }
-
-
-def give_a_task():
-    """Show a task."""
-    print('What is the result of the expression?')
 
 
 def start_round():
@@ -29,7 +25,7 @@ def start_round():
     sign = random.choice(('+', '-', '*'))
 
     correct_answer = str(
-        action[sign](first_operand, second_operand),
+        ACTION[sign](first_operand, second_operand),
     )
     expression = '{first} {s} {second}'.format(
         first=first_operand,

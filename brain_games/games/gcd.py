@@ -2,12 +2,8 @@
 import math
 import random
 
+TASK = 'Find the greatest common divisor of given numbers.'
 RANDOM_LIMIT = 15  # max value of start dividers in gcd game
-
-
-def give_a_task():
-    """Show a task."""
-    print('Find the greatest common divisor of given numbers.')
 
 
 def generate_the_pair():

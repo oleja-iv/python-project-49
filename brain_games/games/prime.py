@@ -2,12 +2,8 @@
 import math
 import random
 
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 RANDOM_LIMIT = 100  # max value of number
-
-
-def give_a_task():
-    """Show a task."""
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def check_for_prime(given_number):

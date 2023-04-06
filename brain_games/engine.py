@@ -38,14 +38,13 @@ def start_the(game_name):
         game_name: what game we will start
     """
     name = brain_games.cli.welcome_user()
-    game_name.give_a_task()
+    print(game_name.TASK)
 
     successful_rounds = 0
     while successful_rounds < MAX_ROUNDS:
         task, correct_answer = game_name.start_round()
         if not is_correct_answer(task, correct_answer):
             print("Let's try again, {who}!".format(who=name))
-            break
+            return
         successful_rounds += 1
-    if successful_rounds == MAX_ROUNDS:
-        print('Congratulations, {who}!'.format(who=name))
+    print('Congratulations, {who}!'.format(who=name))
