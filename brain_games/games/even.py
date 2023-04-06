@@ -6,7 +6,7 @@ TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 RANDOM_LIMIT = 30  # max value of random number
 
 
-def check_for_even(number):
+def is_even(number):
     """
     Check number is even or not.
 
@@ -16,7 +16,7 @@ def check_for_even(number):
     Returns:
         True if number is even, otherwise False
     """
-    return False if number % 2 else True
+    return not number % 2
 
 
 def start_round():
@@ -28,5 +28,5 @@ def start_round():
          correct_answer: correct answer for the task
     """
     random_number = random.randint(-RANDOM_LIMIT, RANDOM_LIMIT)
-    correct_answer = 'yes' if check_for_even(random_number) else 'no'
+    correct_answer = 'yes' if is_even(random_number) else 'no'
     return random_number, correct_answer
