@@ -12,7 +12,7 @@ def generate_progression():
     Generate progression.
 
     Returns:
-         list of progression
+         list of progression, its length
     """
     element = random.randint(-RANDOM_LIMIT, RANDOM_LIMIT)
     length = random.randint(MINIMUM_SIZE, MAXIMUM_SIZE)
