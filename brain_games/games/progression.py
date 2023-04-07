@@ -30,7 +30,7 @@ def get_game():
     Answer the question three times, find the missing element in progression.
 
     Returns:
-         True if user is a winner, False in otherwise
+         question, correct answer
     """
     progression, length = generate_progression()
     element = random.randint(0, length)
