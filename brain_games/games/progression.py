@@ -1,7 +1,7 @@
 """Find the missing value of progression game."""
 import random
 
-TASK = 'What number is missing in the progression?'
+GAME_RULE = 'What number is missing in the progression?'
 RANDOM_STEP_LIMIT = 20  # max value of step in progression game
 RANDOM_LIMIT = 1000  # max start value
 (MINIMUM_SIZE, MAXIMUM_SIZE) = (5, 10)  # amount of numbers in shown progression
@@ -25,7 +25,7 @@ def generate_progression():
     return progression, length
 
 
-def start_round():
+def get_game():
     """
     Answer the question three times, find the missing element in progression.
 

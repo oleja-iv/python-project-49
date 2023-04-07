@@ -2,11 +2,11 @@
 import math
 import random
 
-TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 RANDOM_LIMIT = 100  # max value of number
 
 
-def check_for_prime(given_number):
+def is_prime(given_number):
     """
     Check number is prime or not.
 
@@ -25,7 +25,7 @@ def check_for_prime(given_number):
     return True
 
 
-def start_round():
+def get_game():
     """
     Answer 'yes' if number is prime, otherwise 'no'.
 
@@ -34,6 +34,6 @@ def start_round():
          correct_answer: 'yes', if number is Prime, otherwise 'no'
     """
     random_number = random.randint(2, RANDOM_LIMIT)
-    correct_answer = 'yes' if check_for_prime(random_number) else 'no'
+    correct_answer = 'yes' if is_prime(random_number) else 'no'
 
     return random_number, correct_answer

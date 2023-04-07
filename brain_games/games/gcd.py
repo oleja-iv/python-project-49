@@ -2,11 +2,11 @@
 import math
 import random
 
-TASK = 'Find the greatest common divisor of given numbers.'
+GAME_RULE = 'Find the greatest common divisor of given numbers.'
 RANDOM_LIMIT = 15  # max value of start dividers in gcd game
 
 
-def generate_the_pair():
+def generate_gcd_pair():
     """
     Generate a pair with common divider.
 
@@ -23,7 +23,7 @@ def generate_the_pair():
     return first_pseudo_random, second_pseudo_random
 
 
-def start_round():
+def get_game():
     """
     Answer the question three times, find the greatest common divisor.
 
@@ -31,7 +31,7 @@ def start_round():
          pair: two numbers, where user will find the gcd
          correct_answer: correct answer
     """
-    first_random_number, second_random_number = generate_the_pair()
+    first_random_number, second_random_number = generate_gcd_pair()
 
     correct_answer = str(math.gcd(first_random_number, second_random_number))
     pair = '{x} {y}'.format(x=first_random_number, y=second_random_number)

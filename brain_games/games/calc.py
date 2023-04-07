@@ -2,7 +2,7 @@
 import operator
 import random
 
-TASK = 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 RANDOM_LIMIT = 30  # max value of operands
 # dict with operators for calc game
 ACTION = {
@@ -12,7 +12,7 @@ ACTION = {
 }
 
 
-def start_round():
+def get_game():
     """
     Generate expression and correct answer for it.
 

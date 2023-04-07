@@ -2,7 +2,7 @@
 
 import random
 
-TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 RANDOM_LIMIT = 30  # max value of random number
 
 
@@ -19,7 +19,7 @@ def is_even(number):
     return not number % 2
 
 
-def start_round():
+def get_game():
     """
     Generate even or not number and solution.
 
