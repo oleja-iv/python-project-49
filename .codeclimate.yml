@@ -6,3 +6,6 @@ plugins:
         python:
           python_version: 3
             - "scripts/*.py"
+checks:
+  identical-code:
+    enabled: false
